@@ -11,3 +11,12 @@ body,
   background-color: #f7f9e8;
   height: 100%;
 }
+
+.start {
+  justify-content: flex-start;
+}
+
+.column {
+  flex-direction: column;
+  justify-content: flex-start;
+}
