@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Companhia() {
+function Empresa() {
   return (
-    <h1>Companhia</h1>
+    <h1>Empresa</h1>
   )
 }
 
-export default Companhia
+export default Empresa
