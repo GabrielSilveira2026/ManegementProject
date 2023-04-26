@@ -6,22 +6,22 @@ import logo from '../../../img/logo.png'
 
 function NavBar() {
   return (
-    <nav class={styles.navBar}>
+    <nav className={styles.navBar}>
       <Container>
         <Link to='/'>
-          <img class={styles.logo} src={logo} alt='manegementproject'></img>
+          <img className={styles.logo} src={logo} alt='manegementproject'></img>
         </Link>
-        <ul class={styles.list}>
-          <li class={styles.item}>
+        <ul className={styles.list}>
+          <li className={styles.item}>
             <Link to="/">Home</Link>
           </li>
-          <li class={styles.item}>
+          <li className={styles.item}>
             <Link to="/projetos">Projetos</Link>
           </li>
-          <li class={styles.item}>
+          <li className={styles.item}>
             <Link to="/contato">Contato</Link>
           </li>
-          <li class={styles.item}>
+          <li className={styles.item}>
             <Link to="/empresa">Empresa</Link>
           </li>
         </ul>
