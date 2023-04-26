@@ -1,4 +1,4 @@
-import React from 'react'
+import styles from './Empresa.module.css';
 
 function Empresa() {
   return (

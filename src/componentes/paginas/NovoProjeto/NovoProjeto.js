@@ -1,4 +1,4 @@
-import React from 'react'
+import styles from './NovoProjeto.module.css';
 
 function NovoProjeto() {
   return (

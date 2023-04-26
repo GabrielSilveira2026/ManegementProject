@@ -1,12 +1,12 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Home from './componentes/paginas/Home';
-import Contato from './componentes/paginas/Contato';
-import NovoProjeto from './componentes/paginas/NovoProjeto';
-import Empresa from './componentes/paginas/Empresa';
+import Home from './componentes/paginas/Home/Home';
+import Contato from './componentes/paginas/Contato/Contato';
+import NovoProjeto from './componentes/paginas/NovoProjeto/NovoProjeto';
+import Empresa from './componentes/paginas/Empresa/Empresa';
 import Container from './componentes/layout/Container/Container';
 import NavBar from './componentes/layout/NavBar/NavBar'
 import Footer from './componentes/layout/Footer/Footer'
-import Projetos from './componentes/paginas/Projetos';
+import Projetos from './componentes/paginas/Projetos/Projetos';
 
 function App() {
   return (

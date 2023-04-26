@@ -1,4 +1,4 @@
-import React from 'react'
+import styles from './Projetos.module.css';
 
 function Projetos() {
   return (
