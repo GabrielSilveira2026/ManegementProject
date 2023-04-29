@@ -32,7 +32,7 @@ function App() {
         </Routes>
       </Container>
 
-      <Footer></Footer>
+      <Footer/>
 
     </Router>
   );
