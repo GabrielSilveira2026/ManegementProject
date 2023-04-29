@@ -1,5 +1,5 @@
 .submitButton {
-    background-color: #222;
+    background-color: var(--backgroundSecundario);
     color: #fff;
     text-decoration: none;
     padding: 0.7em 1.2em;

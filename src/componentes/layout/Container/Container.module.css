@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 0 2em;
+    margin: 0 auto;
     flex-wrap: wrap;
 }
 
