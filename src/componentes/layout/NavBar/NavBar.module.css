@@ -25,5 +25,5 @@
 }
 
 .item a:hover {
-    color: #ffbb33;
+    color: var(--hover);
 }

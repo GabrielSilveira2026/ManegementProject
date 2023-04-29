@@ -9,5 +9,5 @@
 }
 
 .novo_projeto_container p{
-    color: #1d1d1d
+    color: var(--textoSecundario)
 }

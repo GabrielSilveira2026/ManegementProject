@@ -9,5 +9,5 @@
 }
 
 .submitButton:hover{
-    color: #ffbb33
+    color: var(--hover)
 }
