@@ -8,6 +8,10 @@
     border: none
 }
 
+.maxima{
+    width: 100%;
+}
+
 .submitButton:hover{
     color: var(--hover)
 }

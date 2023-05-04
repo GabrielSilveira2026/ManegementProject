@@ -67,7 +67,7 @@ function ProjetoForm({ handleSubmit, btnText, dadosProjeto }) {
         handleOnChange={handleCategoria} 
         value={projeto.categoria ? projeto.categoria.id : ""}
       />
-      <SubmitButton text={btnText} />
+      <SubmitButton text={btnText} largura='maxima'/>
     </form>
   )
 }

@@ -1,6 +1,44 @@
 {
   "projetos": [
-    
+    {
+      "nome": "Projeto 1",
+      "orcamento": "1500",
+      "categoria": {
+        "id": "3",
+        "name": "Design"
+      },
+      "custos": 0,
+      "servicos": [],
+      "id": 1
+    },
+    {
+      "nome": "Projeto 2",
+      "orcamento": "10000",
+      "categoria": {
+        "id": "3",
+        "name": "Design"
+      },
+      "custos": 0,
+      "servicos": [],
+      "id": 2
+    },
+    {
+      "nome": "Projeto 3",
+      "custos": 0,
+      "servicos": [],
+      "id": 3
+    },
+    {
+      "nome": "Teste",
+      "custos": 0,
+      "servicos": [],
+      "id": 4
+    },
+    {
+      "custos": 0,
+      "servicos": [],
+      "id": 5
+    }
   ],
   "categorias": [
     {
