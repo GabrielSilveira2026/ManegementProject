@@ -1,8 +1,9 @@
 import styles from './SubmitButton.module.css';
 
-function SubmitButton({text}) {
+function SubmitButton({text, largura}) {
   return (
-    <button className={styles.submitButton}>{text}</button>
+    <button type='submit' className={`${styles.submitButton} ${styles[largura]}`}>
+    {text}</button>
   )
 }
 
