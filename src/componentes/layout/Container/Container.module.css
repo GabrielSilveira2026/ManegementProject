@@ -6,6 +6,10 @@
     flex-wrap: wrap;
 }
 
+.start {
+    justify-content: flex-start;
+}
+
 .min-height{
     min-height: 75%;
 }
