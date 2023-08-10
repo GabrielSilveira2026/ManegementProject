@@ -16,7 +16,7 @@
       "orcamento": "10000",
       "categoria": {
         "id": "3",
-        "name": "Design"
+        "name": "Desenvolvimento"
       },
       "custos": 0,
       "servicos": [],
@@ -24,20 +24,25 @@
     },
     {
       "nome": "Projeto 3",
+      "orcamento": "1000",
+      "categoria": {
+        "id": "3",
+        "name": "Design"
+      },
       "custos": 0,
       "servicos": [],
       "id": 3
     },
     {
-      "nome": "Teste",
+      "nome": "Gabriel Silveira",
+      "orcamento": "1500",
+      "categoria": {
+        "id": "1",
+        "name": "Infra"
+      },
       "custos": 0,
       "servicos": [],
       "id": 4
-    },
-    {
-      "custos": 0,
-      "servicos": [],
-      "id": 5
     }
   ],
   "categorias": [

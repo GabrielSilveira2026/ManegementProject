@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom' 
-import ProjetoForm from '../../projeto/ProjetoForm';
+import ProjetoForm from '../../projeto/Form/ProjetoForm';
 import styles from './NovoProjeto.module.css';
 
 function NovoProjeto() {
