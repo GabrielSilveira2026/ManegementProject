@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Mensagem from '../../layout/Mensagem/Mensagem';
 import Container from '../../layout/Container/Container';
 import styles from './Projetos.module.css';
+import Loading from '../../layout/Loading/Loading';
 import LinkButton from '../../layout/LinkButton/LinkButton';
 import { useState, useEffect } from 'react';
 import CartaoProjeto from '../../projeto/Cartao/CartaoProjeto';
@@ -10,6 +11,8 @@ import CartaoProjeto from '../../projeto/Cartao/CartaoProjeto';
 function Projetos() {
   const location = useLocation();
   const [projetos, setProjetos] = useState([])
+
+  const [removeLoading, setRemoveLoading] = useState(false)
   
   let mensagem = ''
   if (location.state) {
@@ -17,18 +20,20 @@ function Projetos() {
   }
   
   useEffect(()=>{
-    fetch('http://localhost:5000/projetos',{
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-    .then((resposta) => resposta.json())
-    .then((dados) => {
-      setProjetos(dados)
-      console.log(dados);
-    })
-    .catch((erro) => {console.log(erro);})
+    setTimeout(() => {
+      fetch('http://localhost:5000/projetos', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+        .then((resposta) => resposta.json())
+        .then((dados) => {
+          setProjetos(dados)
+          setRemoveLoading(true)
+        })
+        .catch((erro) => { console.log(erro); })
+    }, 500)
   }, [])
 
   return (
@@ -52,6 +57,12 @@ function Projetos() {
               categoria={projeto.categoria}
             />
           ))
+        }
+        {
+          !removeLoading && <Loading/>
+        }
+        {
+          removeLoading && projetos.length === 0 && (<p>Sem projetos cadastrados</p>)
         }
       </Container>
     </div>
