@@ -13,3 +13,8 @@
 .min-height{
     min-height: 75%;
 }
+
+.column {
+   flex-direction: column;
+   justify-content: flex-start;
+}

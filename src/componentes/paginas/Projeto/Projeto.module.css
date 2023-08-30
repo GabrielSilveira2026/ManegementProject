@@ -1,0 +1,49 @@
+.projetoDetalhes{
+    width: 100%;
+    padding: 2em;
+}
+
+.projetoDetalhes h1,
+.projetoDetalhes h2,
+.projetoDetalhes p {
+    margin-bottom: 0.5em;
+}
+
+.projetoDetalhes h1{
+    background-color: var(--backgroundSecundario);
+    color: var(--hover);
+    padding: 0.4em;
+}
+
+.projetoDetalhes span{
+    font-weight: bold
+}
+
+.containerDetalhes,
+.containerServicosForm {
+    border-bottom: 1px solid var(--textoSecundario);
+    margin-bottom: 1.2em ;
+    padding-bottom: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: var(--backgroundSecundario);
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    max-height: 40px;
+    border:none;
+}
+
+.btn:hover{
+    color: var(--hover);
+}
+
+.projetoInfo {
+    width: 100%;
+}
