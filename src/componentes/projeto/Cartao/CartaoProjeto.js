@@ -3,7 +3,11 @@ import styles from './CartaoProjeto.module.css'
 import {Link} from 'react-router-dom'
 import {BsPencil, BsFillTrashFill} from 'react-icons/bs'
 
-function CartaoProjeto({id, nome, categoria, orcamento,handleRemove}) {
+function CartaoProjeto({id, nome, categoria, orcamento, handleRemove}) {
+    const remove = (e) => {
+        e.preventDefault()
+        handleRemove(id)
+    }
   return (
     <div className={styles.cartaoProjeto}>
         <h4>{nome}</h4>
@@ -18,9 +22,9 @@ function CartaoProjeto({id, nome, categoria, orcamento,handleRemove}) {
             <Link to="/">
                 <BsPencil/>Editar
             </Link>
-            <Link to="/">
+            <button onClick={remove}>
                 <BsFillTrashFill/>Excluir
-            </Link>
+            </button>
         </div>
     </div>
   )

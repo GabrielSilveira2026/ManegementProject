@@ -11,8 +11,8 @@ import CartaoProjeto from '../../projeto/Cartao/CartaoProjeto';
 function Projetos() {
   const location = useLocation();
   const [projetos, setProjetos] = useState([])
-
   const [removeLoading, setRemoveLoading] = useState(false)
+  const [mensagemProjeto, setMensagemProjeto] = useState("")
   
   let mensagem = ''
   if (location.state) {
@@ -36,14 +36,32 @@ function Projetos() {
     }, 500)
   }, [])
 
+  function removeProjeto(id) {
+    fetch(`http://localhost:5000/projetos/${id}`,{
+        method: 'DELETE',
+        headers: {
+          'Content-type': 'application/json'
+        }
+    })
+    .then(resposta => resposta.json())
+    .then(data => {
+      setProjetos(projetos.filter((projeto) => projeto.id != id))
+      setMensagemProjeto("Projeto removido com sucesso")
+    })
+    .catch((erro) => console.error(erro))
+  }
+
   return (
     <div className={styles.project_container}>
       <div className={styles.title_container}>
         <h1>Meus Projetos</h1>
         <LinkButton to="/novoProjeto" text="Criar Projeto"/>
       </div>
-      {mensagem && 
-        <Mensagem tipo="sucesso" mensagem={mensagem}/>
+      {
+        mensagem && <Mensagem tipo="sucesso" mensagem={mensagem}/>
+      }
+      {
+        mensagemProjeto && <Mensagem tipo="sucesso" mensagem={mensagemProjeto}/>
       }
       <Container customClass="start">
         {
@@ -55,6 +73,7 @@ function Projetos() {
               nome={projeto.nome} 
               orcamento={projeto.orcamento}
               categoria={projeto.categoria}
+              handleRemove={removeProjeto}
             />
           ))
         }

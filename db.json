@@ -21,17 +21,6 @@
       "custos": 0,
       "servicos": [],
       "id": 2
-    },
-    {
-      "nome": "Projeto 3",
-      "orcamento": "1000",
-      "categoria": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "custos": 0,
-      "servicos": [],
-      "id": 3
     }
   ],
   "categorias": [
