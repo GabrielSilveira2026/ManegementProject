@@ -19,6 +19,7 @@ function ProjetoForm({ handleSubmit, btnText, dadosProjeto }) {
       .then((resposta) => resposta.json())
       .then((dados) => {
         setCategorias(dados)
+        console.log("categorias:", categorias);
       })
       .catch(error => console.log(error))
   }, [])

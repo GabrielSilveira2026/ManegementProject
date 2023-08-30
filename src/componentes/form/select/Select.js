@@ -12,7 +12,7 @@ function Select({text, name, options, handleOnChange, value}) {
       >
         <option>Selecione a opção</option>
         {options.map((opcao) => (
-          <option value={opcao.id} key={opcao.id}>{opcao.name}</option>
+          <option value={opcao.id} key={opcao.id}>{opcao.nome}</option>
         ))}
       </select>
     </div>

@@ -17,7 +17,7 @@ function CartaoProjeto({ id, nome, categoria, orcamento, handleRemove }) {
             </p>
             <p className={styles.categoria_texto}>
                 {/* <div className={`${styles.container} ${styles[props.customClass]}`}> */}
-                <span className={`${styles[categoria?.name?.toLowerCase()]}`}></span> {categoria?.name}
+                <span className={`${styles[categoria?.nome?.toLowerCase()]}`}></span> {categoria?.nome}
             </p>
             <div className={styles.cartaoProjeto_acoes}>
                 <Link to={`/projeto/${id}`}>
