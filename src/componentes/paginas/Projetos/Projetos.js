@@ -27,13 +27,13 @@ function Projetos() {
           'Content-Type': 'application/json'
         }
       })
-        .then((resposta) => resposta.json())
-        .then((dados) => {
-          setProjetos(dados)
-          setRemoveLoading(true)
-        })
-        .catch((erro) => { console.log(erro); })
-    }, 500)
+      .then((resposta) => resposta.json())
+      .then((dados) => {
+        setProjetos(dados)
+        setRemoveLoading(true)
+      })
+      .catch((erro) => { console.log(erro); })
+    }, 200)
   }, [])
 
   function removeProjeto(id) {

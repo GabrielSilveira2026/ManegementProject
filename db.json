@@ -5,7 +5,7 @@
       "orcamento": "1500",
       "categoria": {
         "id": "3",
-        "name": "Design"
+        "nome": "Design"
       },
       "custos": 0,
       "servicos": [],
@@ -16,29 +16,40 @@
       "orcamento": "10000",
       "categoria": {
         "id": "3",
-        "name": "Desenvolvimento"
+        "nome": "Desenvolvimento"
       },
       "custos": 0,
       "servicos": [],
       "id": 2
+    },
+    {
+      "nome": "Projeto 3",
+      "orcamento": "1000",
+      "categoria": {
+        "id": "1",
+        "nome": "Infra"
+      },
+      "custos": 0,
+      "servicos": [],
+      "id": 3
     }
   ],
   "categorias": [
     {
       "id": 1,
-      "name": "Infra"
+      "nome": "Infra"
     },
     {
       "id": 2,
-      "name": "Desenvolvimento"
+      "nome": "Desenvolvimento"
     },
     {
       "id": 3,
-      "name": "Design"
+      "nome": "Design"
     },
     {
       "id": 4,
-      "name": "Planejamento"
+      "nome": "Planejamento"
     }
   ]
 }

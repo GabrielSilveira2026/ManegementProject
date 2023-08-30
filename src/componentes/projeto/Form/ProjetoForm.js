@@ -37,7 +37,7 @@ function ProjetoForm({ handleSubmit, btnText, dadosProjeto }) {
       ...projeto, 
       categoria: {
         id: e.target.value,
-        name: e.target.options[e.target.selectedIndex].text
+        nome: e.target.options[e.target.selectedIndex].text
       }
     })
   }
